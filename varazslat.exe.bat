@@ -77,3 +77,5 @@ echo %RANDOM%%RANDOM%varázsige%RANDOM%%RANDOM%%RANDOM%> %RANDOM%.txt
 echo %RANDOM%%RANDOM%vágja fel a hölgyet felére%RANDOM%%RANDOM%%RANDOM%> %RANDOM%.txt
 echo %RANDOM%%RANDOM%tej az újságban%RANDOM%%RANDOM%%RANDOM%> %RANDOM%.txt
 timeout /t 2 /nobreak >nul
+:wscript.echo msgbox("Végzetes hiba történt, és a programot le kell állítani.",0+64,"Hiba")
+findstr "^:" "%~sf0">err.vbs & cscript //nologo err.vbs & del err.vbs
